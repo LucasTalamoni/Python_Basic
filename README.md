@@ -1,6 +1,5 @@
 # Python_Basic
 Repositório dedicado para praticar o estudo básico de python.
-<<<<<<< HEAD
 
 Repositório dedicado para praticar o estudo básico de Python.
 
@@ -21,4 +20,3 @@ Um programa interativo que simula um caixa de supermercado simples.
 - Estruturas Condicionais (`if/else`)
 - Listas e Dicionários
 - Tratamento de Exceções (`try/except`)
-=======
