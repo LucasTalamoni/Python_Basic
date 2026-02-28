@@ -3,7 +3,11 @@ Repositório dedicado para praticar o estudo básico de python.
 
 Repositório dedicado para praticar o estudo básico de Python.
 
+---
+
 ## Projetos e Exercícios
+
+---
 
 ### 🛒 Caixa de Supermercado (Simulação)
 Um programa interativo que simula um caixa de supermercado simples.
@@ -20,3 +24,6 @@ Um programa interativo que simula um caixa de supermercado simples.
 - Estruturas Condicionais (`if/else`)
 - Listas e Dicionários
 - Tratamento de Exceções (`try/except`)
+
+---
+
