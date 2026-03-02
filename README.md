@@ -1,6 +1,4 @@
 # Python_Basic
-Repositório dedicado para praticar o estudo básico de python.
-
 Repositório dedicado para praticar o estudo básico de Python.
 
 ---
@@ -27,3 +25,21 @@ Um programa interativo que simula um caixa de supermercado simples.
 
 ---
 
+### 🏪 Sistema de Estoque + Vendas
+Um sistema integrado que gerencia estoque e processa vendas com relatórios detalhados.
+
+**Funcionalidades:**
+- Controle de estoque (quantidade e preço).
+- Verificação e atualização automática de estoque.
+- Cálculo de subtotal e total.
+- Desconto condicional de 15% para compras acima de R$ 200,00.
+- Relatórios de venda formatados.
+
+**Conceitos Praticados:**
+- Dicionários Aninhados
+- Funções e Modularização
+- Validação de Dados
+- Formatação de Strings (f-strings avançadas)
+- Lógica de Negócio (Estoque/Venda)
+
+---
