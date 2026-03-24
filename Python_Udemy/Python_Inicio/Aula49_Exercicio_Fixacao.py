@@ -12,6 +12,14 @@ palavras = "  Eletrônicos  ;  Cozinha ; Games  ; Periféricos  "
 palavras_separadas = palavras.split(";")
 #print(type(palavras_separadas))
 
-pavras_formatadas = []
-for i, palavra in palavras_separadas:
-    
+palavras_formatadas = []
+
+for i, palavra in enumerate(palavras_separadas):
+    palavras_formatadas.append(palavras_separadas[i].strip())
+    #palavras_formatadas.append(palavra.strip()) OBS: É a mesma coisa
+
+#print(palavras_formatadas)
+
+palavras_unidas = ' > '.join(palavras_formatadas)
+
+print(palavras_unidas)
