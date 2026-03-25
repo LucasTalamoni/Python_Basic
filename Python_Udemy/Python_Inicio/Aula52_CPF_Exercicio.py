@@ -1,30 +1,3 @@
-"""
-Calculo do primeiro dígito do CPF
-CPF: 746.824.890-70
-Colete a soma dos 9 primeiros dígitos do CPF
-multiplicando cada um dos valores por uma
-contagem regressiva começando de 10
-
-Ex.:  746.824.890-70 (746824890)
-   10  9  8  7  6  5  4  3  2
-*  7   4  6  8  2  4  8  9  0
-   70  36 48 56 12 20 32 27 0
-
-Somar todos os resultados: 
-70+36+48+56+12+20+32+27+0 = 301
-Multiplicar o resultado anterior por 10
-301 * 10 = 3010
-Obter o resto da divisão da conta anterior por 11
-3010 % 11 = 7
-Se o resultado anterior for maior que 9:
-    resultado é 0
-contrário disso:
-    resultado é o valor da conta
-
-O primeiro dígito do CPF é 7
-"""
-#cpf_input_str = ''
-
 while True:
     cpf_input_str = input("Digite seu CPF (apenas números, 11 dígitos): ")
 
@@ -46,6 +19,38 @@ while True:
 
     break
 
-soma_cpf = 0
-c = 10
-for i, j in enumerate(cpf_input_str):
+#---------------------- Verificação Primeiro digitio ---------------------------------------------
+
+cpf_nove_digito = cpf_input_str[:9]
+contador_1 = 10
+resultado_1 = 0
+for i in cpf_nove_digito:
+    resultado_1 += (int(i) * contador_1)
+    contador_1 -= 1
+
+digito_validador_1 = ((resultado_1 * 10) % 11)
+digito_validador_1 = digito_validador_1 if digito_validador_1 < 10 else 0
+
+#------------------------ Fim verificação primeiro digito ---------------------------------------
+
+#------------------------ Verificação Segundo digito --------------------------------------------
+
+cpf_dez_digito = cpf_nove_digito + str(digito_validador_1)
+contador_2 = 11
+resultado_2 = 0
+
+for i in cpf_dez_digito:
+    resultado_2 += (int(i) * contador_2)
+    contador_2 -= 1
+
+digito_validador_2 = ((resultado_2 * 10) % 11)
+digito_validador_2 = digito_validador_2 if digito_validador_2 < 10 else 0
+
+#------------------------ Fim verificação primeiro digito ---------------------------------------
+
+cpf_gerado_calculo = f'{cpf_nove_digito}{digito_validador_1}{digito_validador_2}'
+
+if cpf_gerado_calculo == cpf_input_str:
+    print(f"O CPF: {cpf} é válido")
+else:
+    print(f"O CPF {cpf} não é válido!!")
